@@ -1,0 +1,74 @@
+{
+  "name": "rvr",
+  "description": "Get Runway Visual Range (RVR) values for airports from http://rvr.fly.faa.gov",
+  "version": "0.0.0",
+  "author": {
+    "name": "Forrest Desjardins",
+    "email": "desjardinsfg@gmail.com",
+    "url": "github.com/fdesjardins"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "mocha": "^5.1.0",
+    "nyc": "^11.9.0",
+    "standard": "^11.0.1"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ],
+    "rules": {
+      "object-curly-spacing": [
+        2,
+        "always"
+      ],
+      "array-bracket-spacing": [
+        2,
+        "always"
+      ],
+      "func-style": [
+        2,
+        "expression"
+      ],
+      "prefer-arrow-callback": [
+        2,
+        {
+          "allowNamedFunctions": false
+        }
+      ]
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "runway",
+    "visual",
+    "range",
+    "rvr",
+    "faa",
+    "aviation",
+    "airport",
+    "weather"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "repository": "ResourceDataInc/rvr",
+  "scripts": {
+    "test": "standard *.js && nyc ./node_modules/.bin/mocha --opts mocha.opts test.js"
+  }
+}
