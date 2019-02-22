@@ -1,7 +1,7 @@
 const superagent = require('superagent')
 const cheerio = require('cheerio')
 
-const baseURI = 'http://rvr.fly.faa.gov'
+const baseURI = 'https://rvr.data.faa.gov'
 const apiURI = `${baseURI}/cgi-bin/rvr-details.pl`
 
 // Main method / shortcut to fetch
