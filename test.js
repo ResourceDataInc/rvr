@@ -16,5 +16,5 @@ describe('rvr', () => {
       assert(values.lastUpdated !== null)
       assert(values.rvrValues.length > 0)
     })
-  })
+  }).timeout(10e3)
 })
